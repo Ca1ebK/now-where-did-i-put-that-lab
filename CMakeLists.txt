@@ -15,7 +15,7 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(Catch2)
 
-add_executable(hello_test tests/hello_test.cpp src/hello.cpp)
-add_executable(main main.cpp src/hello.cpp)
+add_executable(find_substring_test tests/find_substring_test.cpp src/find_substring.cpp)
+add_executable(main main.cpp src/find_substring.cpp)
 
-target_link_libraries(hello_test PRIVATE Catch2::Catch2WithMain)
+target_link_libraries(find_substring_test PRIVATE Catch2::Catch2WithMain)
