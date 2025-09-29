@@ -17,11 +17,10 @@ int find_substring(std::string input, std::string str) {
    // str   = "abc"    length = 3
 
    for (int i = 0; i < input.length() - str.length() + 1; i++) {
-      std::string substr;
+      std::string substr{""};
       for (int j = i; j < str.length() + i; j++) {
          substr += input[j];
       }
-      std::cout << substr << std::endl;
       if (substr == str) {
          return i;
       }
